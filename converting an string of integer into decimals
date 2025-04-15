@@ -1,0 +1,4 @@
+import decimal
+string='1234'
+print(decimal.Decimal(string))
+print(type(decimal.Decimal(string)))
