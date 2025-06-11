@@ -1,0 +1,27 @@
+#1.To print specific month of a specific year
+import calendar
+month=int(input())
+year=int(input())
+cal=calendar.month(year,month)
+print(cal)
+
+
+#2.To print a whole year calendar
+import calendar
+year=int(input())
+cal=calendar.calendar(year)
+print(cal)
+
+
+#3.To print sequence of years EX: 2005-2024 and 2024-2005
+import calendar
+start=int(input())
+end=int(input())
+if start>end:
+    for i in range(start,end+1,-1):
+        cal=calendar.calendar(i)
+        print(cal)
+if start<end:
+    for i in range(start,end+1):
+        cal=calendar.calendar(i)
+        print(cal)
