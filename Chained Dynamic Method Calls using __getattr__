@@ -1,0 +1,8 @@
+class Magic:
+    def __getattr__(self,name):
+        def method(*args,**kwargs):
+            print(f"Called:{name}")
+            return self
+        return method
+m=Magic()
+m.follow().nagu()
